@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.w3-button {width:150px}
+</style>
+<script>
+    function time(){
+        var time = new Date();
+       document.getElementById("Day").innerHTML =" วันที่: "+time.getDate() +" เดือน: "+(time.getMonth()+1) +" ปี: "+time.getFullYear() ;
+       document.getElementById("Minutes").innerHTML ="ชั่วโมง: "+time.getHours() + "นาที: " +time.getMinutes() ;
+       document.getElementById("Seconds").innerHTML ="วินาที:"+time.getSeconds() ;
+       
+
+    }
+</script>
+</head>
+
+<body>
+  <p><button class="w3-button w3-border w3-hover-deep-purple"onclick="time()">เช็คเวลา</button></p>
+    <h1 id="Year"></h1>
+    <h1 id="Day"></h1>
+    <h1 id="Month"></h1>
+    <h1 id="Hours"></h1>
+    <h1 id="Minutes"></h1>
+    <h1 id="Seconds"></h1>
+
+
+</body>
+</html>
